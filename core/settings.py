@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'debug_toolbar',
     
     'frontend',
+    'inv_management',
+    'Tag'
 ]
 
 MIDDLEWARE = [

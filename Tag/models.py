@@ -12,7 +12,7 @@ class TaggedItem(models.Model):
     # What tag applied to what product
     tag = models.ForeignKey(Tag, on_delete = models.CASCADE)
     # these three are needed to define a generic relationship
-    const_type = models.ForeignKey(ContentType, on_delete = models.CASCADE)
+    content_type = models.ForeignKey(ContentType, on_delete = models.CASCADE)
     object_id = models.PositiveIntegerField()
     content_object = GenericForeignKey()
     
